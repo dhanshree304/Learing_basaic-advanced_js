@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cf9aff, #95c0ff);
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+}
+.Img1 {
+  width: 30px;
+  height: 30px;
+}
+#addBtn {
+  margin-top: 20px;
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(#9418fd, #571094);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.notesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.note {
+  border: 1px solid transparent;
+  padding: 10px;
+  width: 80%;
+  outline: none;
+  height: 100%;
+}
+
+.notesContainer > div {
+  background-color: white;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.notesContainer > div > i {
+  color: green;
+  cursor: pointer;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#display > div {
+  background-color: white;
+  display: block;
+  color: black;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#display > div > i {
+  cursor: pointer;
+  color: red;
+}
