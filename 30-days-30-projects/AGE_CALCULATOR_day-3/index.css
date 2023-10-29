@@ -1,0 +1,35 @@
+.container  {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin:auto;
+margin-top: 90px;
+width: 30%;
+height: 300px;
+text-align: center;
+
+}
+#date{
+    height: 40px;
+    width: 150px;
+    margin-left:  120px;
+    
+}
+.input-box {
+display: flex;
+flex-direction: column;
+gap: 40px;
+width: 90px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.input-box button{
+background-color: rgb(39, 159, 39);
+    margin-left:  120px;
+    width: 100px;
+    height: 30px;
+
+}
+span{
+    color: rgb(39, 159, 39);
+}
