@@ -1,0 +1,21 @@
+
+.main{
+    width: 30%;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+#displayBox{
+    
+   
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button{
+    margin-top: 40px;
+    background-color: green;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+}
