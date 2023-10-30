@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <style>
+        button {
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="myAudio" src="files/audio-file.mp3"></audio>
+<button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+
+<script>
+    var audio = document.getElementById("myAudio");
+    var playPauseBtn = document.getElementById("playPauseBtn");
+
+    function togglePlayPause() {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.innerHTML = "Pause";
+        } else {
+            audio.pause();
+            playPauseBtn.innerHTML = "Play";
+        }
+    }
+</script>
+
+</body>
+</html>

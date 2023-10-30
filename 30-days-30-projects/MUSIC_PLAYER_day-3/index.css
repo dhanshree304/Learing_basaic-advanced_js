@@ -1,0 +1,62 @@
+.main {
+  height: auto;
+  width: 25%;
+  margin: auto;
+  background-color: rgb(199, 231, 244);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.imgDiv {
+  height: 120px;
+  width: 120px;
+  border: 4px solid skyblue;
+  background-image: url(files/music_girl.avif);
+  background-size: cover;
+  opacity: 0.9;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.upperIcon {
+  display: flex;
+  justify-content: space-between;
+}
+.upperIcon i {
+  margin: 20px 20px;
+  font-size: 20px;
+}
+.textDiv {
+  text-align: center;
+  margin-bottom: 7px;
+}
+#musicDiv {
+  margin-left: 30px;
+}
+#progress {
+  /* -webkit-appearance: none;  */
+  width: 100%;
+  height: 6px;
+  background: rgba(0, 0, 139, 0.721);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: rgba(0, 0, 139, 0.721);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(76, 26, 255, 0.22);
+}
+.controls {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.controls i {
+  margin: 5px 30px 20px 30px;
+  font-size: 30px;
+}

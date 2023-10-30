@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="upperIcon">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+
+
+        <div class="imgDiv"></div>
+        <div class="textDiv">
+            <h3>Despactio</h3>
+            <p>Luis Fons fit.Puertro Fucikon</p>
+        </div>
+
+        <div id="musicDiv"><audio controls id="song">
+                <source src="files/audio-file.mp3" type="audio/mpeg">
+            </audio></div>
+
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <i class="fa-solid fa-backward-step"></i>
+            <div onclick="playPause()" class="ctrlIcon"><i class="fa-solid fa-play"></i></div>
+
+            <i class="fa-solid fa-forward-step"></i>
+
+
+        </div>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/b5962a8d07.js" crossorigin="anonymous"></script>
+
+</html>
