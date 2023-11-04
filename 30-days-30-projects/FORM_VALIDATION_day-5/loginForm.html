@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #3498db;
+        }
+
+        #form-container {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+            width: 20%;
+            margin: auto;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        .error {
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateForm()">
+            <input type="text" placeholder="User Name" id="username">
+            <p id="userError" class="error"></p>
+            <input type="password" placeholder="password" id="password"><br>
+            <p id="passError" class="error"></p>
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+<script>
+
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+    let flag = 1;
+
+    function validateForm() {
+        if (username.value == "") {
+            document.getElementById("userError").innerHTML = "User name is empty"
+            flag = 0;
+        } else if (username.value.length < 3) {
+            document.getElementById("userError").innerHTML = "Usee name require mim 3 char";
+            flag = 0
+        } else {
+            document.getElementById("userError").innerHTML = "";
+            flag = 1;
+        }
+        if (password.value == "") {
+            document.getElementById("passError").innerHTML = "Password is empty";
+            flag = 0
+        } else {
+            document.getElementById("passError").innerHTML = "";
+            flag = 1
+        }
+        if (flag) {
+            return true;
+        } else {
+            return false
+        }
+    }
+</script>
+
+</html>
