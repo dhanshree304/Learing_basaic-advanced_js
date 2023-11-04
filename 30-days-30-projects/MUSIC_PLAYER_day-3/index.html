@@ -23,17 +23,17 @@
             <p>Luis Fons fit.Puertro Fucikon</p>
         </div>
 
-        <div id="musicDiv"><audio controls id="song">
-                <source src="files/audio-file.mp3" type="audio/mpeg">
+        <div id="musicDiv"><audio controls autoplay=false id="song">
+                <source src="files/aud2.mp3" type="audio/mpeg" id="audioSong">
             </audio></div>
 
         <input type="range" value="0" id="progress">
 
         <div class="controls">
-            <i class="fa-solid fa-backward-step"></i>
+            <div id="prev"><i class="fa-solid fa-backward-step"></i></div>
             <div onclick="playPause()" class="ctrlIcon"><i class="fa-solid fa-play"></i></div>
 
-            <i class="fa-solid fa-forward-step"></i>
+            <div id="next"><i class="fa-solid fa-forward-step"></i></div>
 
 
         </div>
