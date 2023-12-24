@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        
+    }
+    #main>div{
+    border: 1px solid black;
+    padding: 10px;
+  
+   
+    
+    }
+    #main>div>button{
+        background-color:aqua;
+    }
+
+    @media all and (min-width:480px) and (max-width:720px) {
+            #main{
+                grid-template-columns: repeat(1,1fr);
+            
+            }
+        }
+
+        @media all and (min-width:721px) and (max-width:1080px) {
+            #main {
+                grid-template-columns: repeat(2,1fr);
+      
+        
+            }
+        }
+</style>
+
+<body>
+
+    <h2>Lorem ipsum e autem libero eos! Dolorum recusandae velit vel hic
+        harum obcaecati.</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ipsam iure neque molestiae in adipisci rem fuga
+        at minus, veniam distinctio magni tempora necessitatibus voluptatibus velit et voluptatem molestias aliquid!
+    </h4>
+<div id="main">
+    <div id="first"> 
+        <h3>starter plan</h3>
+        <h1>free</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi magnam voluptate ipsum est sunt accusamus totam quasi </p>
+        <button>start now</button>
+    </div>
+    <div id="second">
+        <h3>Business plan</h3>
+        <h1>$39.00</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi magnam voluptate ipsum est sunt accusamus totam quasi </p>
+        <button>start now</butto></div>
+
+            <div id="third">
+                <h3>Premium Plan</h3>
+                <h1>$ 70.00</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi magnam voluptate ipsum est sunt accusamus totam quasi </p>
+                <button>start now</butto></div>
+                </div>
+
+</body>
+
+</html>
